@@ -1,0 +1,79 @@
+.newProduct {
+  display: flex;
+  width: 100%;
+  .newProductContainer {
+    flex: 7;
+  }
+  .protop,
+  .probottom {
+    -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+
+    h1 {
+      color: rgb(123, 120, 120);
+      font-size: 20px;
+      font-family: "Saira", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+    }
+    .proleft {
+      flex: 1;
+      text-align: center;
+
+      img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+    .proright {
+      flex: 2;
+      form {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: space-around;
+        .productformInput {
+          width: 40%;
+          label {
+            font-family: "Saira", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            .proicon {
+              cursor: pointer;
+            }
+          }
+          input {
+            font-family: "Saira", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 500;
+            width: 100%;
+            padding: 5px;
+            border: none;
+            border-bottom: 1px solid rgb(96, 96, 96);
+          }
+        }
+        button {
+          font-family: "Saira", sans-serif;
+          font-optical-sizing: auto;
+          font-weight: 500;
+          width: 150px;
+          padding: 10px;
+          bottom: none;
+          background-color: teal;
+          color: white;
+          font-weight: bold;
+          margin-top: 10px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}

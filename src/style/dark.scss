@@ -1,0 +1,156 @@
+.app.dark {
+  width: 100%;
+  background-color: #171717;
+  color: rgb(185, 181, 181);
+
+  .chartGrid {
+    stroke: rgba(240, 234, 234, 0.219);
+  }
+
+  .table {
+    background-color: #242323;
+
+    .tableCell {
+      color: rgb(143, 141, 141);
+    }
+  }
+
+  .navbar {
+    color: #999;
+    border-color: #333;
+
+    .search {
+      border-color: gray;
+    }
+  }
+
+  .sidebar {
+    background-color: #171717;
+
+    hr {
+      border-color: #999;
+    }
+
+    ul {
+      li {
+        &:hover {
+          background-color: #333;
+        }
+      }
+    }
+  }
+
+  .datatable {
+    overflow-x: auto;
+
+    .datagrid {
+      color: rgb(140, 138, 138);
+      border: none;
+      min-width: 600px; // Ensures the grid has a minimum width
+
+      .MuiDataGrid-columnHeaders,
+      .MuiDataGrid-columnHeaderTitleContainer,
+      .MuiDataGrid-cell {
+        color: rgb(140, 138, 138);
+        border: none;
+      }
+
+      .MuiDataGrid-cellContent {
+        text-align: center;
+      }
+    }
+
+    .cellAction {
+      .viewButton {
+        color: rgba(77, 142, 226, 0.838);
+      }
+
+      .deleteButton {
+        color: rgb(192, 88, 88);
+      }
+    }
+  }
+
+  .prodatatable {
+    .prodatagrid {
+      color: rgb(140, 138, 138);
+      border: none;
+
+      .proviewButton {
+        color: rgba(77, 142, 226, 0.838);
+      }
+
+      .prodeleteButton {
+        color: rgb(192, 88, 88);
+      }
+    }
+  }
+
+  input {
+    background-color: transparent;
+  }
+
+  // Media Queries for Responsiveness
+  @media (max-width: 1200px) {
+    // Adjustments for screens smaller than 1200px
+    .datatable .datagrid {
+      min-width: 1000px;
+    }
+  }
+
+  @media (max-width: 990px) {
+    // Adjustments for screens smaller than 990px
+    .datatable .datagrid {
+      min-width: 800px;
+    }
+  }
+
+  @media (max-width: 770px) {
+    // Adjustments for screens smaller than 770px
+    .datatable .datagrid {
+      min-width: 600px;
+    }
+  }
+
+  @media (max-width: 670px) {
+    // Adjustments for screens smaller than 670px
+    .datatable .datagrid {
+      min-width: 500px;
+    }
+  }
+
+  @media (max-width: 570px) {
+    // Adjustments for screens smaller than 570px
+    .datatable .datagrid {
+      min-width: 400px;
+    }
+  }
+
+  @media (max-width: 480px) {
+    // Adjustments for screens smaller than 480px
+    .datatable .datagrid {
+      min-width: 300px;
+    }
+  }
+
+  @media (max-width: 370px) {
+    // Adjustments for screens smaller than 370px
+    .datatable .datagrid {
+      min-width: 200px;
+    }
+  }
+
+  @media (max-width: 330px) {
+    // Adjustments for screens smaller than 330px
+    .datatable .datagrid {
+      min-width: 150px;
+    }
+  }
+
+  @media (max-width: 300px) {
+    // Adjustments for screens smaller than 300px
+    .datatable .datagrid {
+      min-width: 100px;
+    }
+  }
+}

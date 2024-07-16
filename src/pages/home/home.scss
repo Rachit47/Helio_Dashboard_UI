@@ -1,0 +1,238 @@
+.home {
+  display: flex;
+
+  .homeContainer {
+    flex: 6;
+    padding: 10px;
+
+    .widgets,
+    .charts {
+      display: flex;
+      flex-wrap: wrap; // Allow wrapping of widgets and charts
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .charts {
+      padding: 5px 20px;
+    }
+
+    .listContainer {
+      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+      box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+      padding: 20px;
+      margin: 20px;
+
+      .listTitle {
+        font-weight: 500;
+        color: gray;
+        margin-bottom: 15px;
+      }
+    }
+  }
+}
+
+// Media Queries for responsiveness
+@media only screen and (max-width: 1400px) {
+  .home {
+    .homeContainer {
+      .widgets,
+      .charts {
+        gap: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .home {
+    .homeContainer {
+      flex: 5; // Slightly reduce the container size
+      padding: 8px;
+
+      .widgets,
+      .charts {
+        gap: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .home {
+    .homeContainer {
+      flex: 4; // Further reduce the container size
+      padding: 6px;
+
+      .widgets,
+      .charts {
+        flex-direction: column; // Stack vertically on smaller screens
+        gap: 8px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home {
+    flex-direction: column; // Switch to column layout for home
+
+    .homeContainer {
+      flex: 3; // Further reduce the container size
+      padding: 4px;
+
+      .widgets {
+        flex-direction: column; // Stack widgets vertically
+        gap: 6px;
+      }
+
+      .charts {
+        padding: 4px;
+        flex-direction: column;
+      }
+
+      .listContainer {
+        padding: 10px;
+        margin: 10px;
+
+        .listTitle {
+          font-weight: 500;
+          color: gray;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .home {
+    flex-direction: column;
+
+    .homeContainer {
+      flex: 2; // Further reduce the container size
+      padding: 2px;
+
+      .widgets {
+        flex-direction: column;
+        padding: 2px;
+        gap: 4px;
+      }
+
+      .charts {
+        padding: 2px;
+        flex-direction: column;
+      }
+
+      .listContainer {
+        padding: 5px;
+        margin: 5px;
+
+        .listTitle {
+          font-weight: 500;
+          color: gray;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .home {
+    flex-direction: column;
+
+    .homeContainer {
+      flex: 1.5; // Slightly reduce the container size
+      padding: 1.5px;
+
+      .widgets {
+        flex-direction: column;
+        padding: 1.5px;
+        gap: 3px;
+      }
+
+      .charts {
+        padding: 1.5px;
+        flex-direction: column;
+      }
+
+      .listContainer {
+        padding: 4px;
+        margin: 4px;
+
+        .listTitle {
+          font-weight: 500;
+          color: gray;
+          margin-bottom: 4px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .home {
+    flex-direction: column;
+
+    .homeContainer {
+      flex: 1.25; // Slightly reduce the container size
+      padding: 1.25px;
+
+      .widgets {
+        flex-direction: column;
+        padding: 1.25px;
+        gap: 2.5px;
+      }
+
+      .charts {
+        padding: 1.25px;
+        flex-direction: column;
+      }
+
+      .listContainer {
+        padding: 3px;
+        margin: 3px;
+
+        .listTitle {
+          font-weight: 500;
+          color: gray;
+          margin-bottom: 3px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .home {
+    flex-direction: column;
+
+    .homeContainer {
+      flex: 1; // Final reduction for smallest screens
+      padding: 1px;
+
+      .widgets {
+        flex-direction: column;
+        padding: 1px;
+        gap: 2px;
+      }
+
+      .charts {
+        padding: 1px;
+        flex-direction: column;
+      }
+
+      .listContainer {
+        padding: 2px;
+        margin: 2px;
+
+        .listTitle {
+          font-weight: 500;
+          color: gray;
+          margin-bottom: 2px;
+        }
+      }
+    }
+  }
+}

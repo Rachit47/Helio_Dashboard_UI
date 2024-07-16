@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Federant&family=Keania+One&family=Orbitron:wght@400..900&display=swap");
+.featured {
+  flex: 4;
+  -webkit-box-shadow: 2px 4px 10px 1 px rgba(0, 0, 0, 0.47);
+  box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+  padding: 10px;
+  .featuredTitle {
+    margin-bottom: 20px;
+    font-family: "Saira", sans-serif;
+    font-weight: bold;
+    color:gray;
+  }
+}
