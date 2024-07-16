@@ -16,8 +16,9 @@
   }
 
   .navbar {
+    background-color: #171717;
     color: #999;
-    border-color: #333;
+    border-color: #171717;
 
     .search {
       border-color: gray;
@@ -41,8 +42,7 @@
   }
 
   .datatable {
-    overflow-x: auto;
-
+    background-color: #171717;
     .datagrid {
       color: rgb(140, 138, 138);
       border: none;
@@ -72,6 +72,7 @@
   }
 
   .prodatatable {
+    background-color: #171717;
     .prodatagrid {
       color: rgb(140, 138, 138);
       border: none;
@@ -89,68 +90,49 @@
   input {
     background-color: transparent;
   }
-
-  // Media Queries for Responsiveness
-  @media (max-width: 1200px) {
-    // Adjustments for screens smaller than 1200px
-    .datatable .datagrid {
-      min-width: 1000px;
+  .new {
+    .newContainer {
+      background-color: #171717;
+      .top {
+        background-color: #171717;
+      }
+      .right {
+        background-color: #171717;
+      }
+    }
+  }
+  .newProduct {
+    .newProductContainer {
+      background-color: #171717;
+      .protop {
+        background-color: #171717;
+      }
+      .proright {
+        background-color: #171717;
+      }
+    }
+  }
+  .single {
+    .singleContainer {
+      background-color: #171717;
+      .top {
+        background-color: #171717;
+      }
+      .right {
+        background-color: #171717;
+      }
     }
   }
 
-  @media (max-width: 990px) {
-    // Adjustments for screens smaller than 990px
-    .datatable .datagrid {
-      min-width: 800px;
-    }
-  }
-
-  @media (max-width: 770px) {
-    // Adjustments for screens smaller than 770px
-    .datatable .datagrid {
-      min-width: 600px;
-    }
-  }
-
-  @media (max-width: 670px) {
-    // Adjustments for screens smaller than 670px
-    .datatable .datagrid {
-      min-width: 500px;
-    }
-  }
-
-  @media (max-width: 570px) {
-    // Adjustments for screens smaller than 570px
-    .datatable .datagrid {
-      min-width: 400px;
-    }
-  }
-
-  @media (max-width: 480px) {
-    // Adjustments for screens smaller than 480px
-    .datatable .datagrid {
-      min-width: 300px;
-    }
-  }
-
-  @media (max-width: 370px) {
-    // Adjustments for screens smaller than 370px
-    .datatable .datagrid {
-      min-width: 200px;
-    }
-  }
-
-  @media (max-width: 330px) {
-    // Adjustments for screens smaller than 330px
-    .datatable .datagrid {
-      min-width: 150px;
-    }
-  }
-
-  @media (max-width: 300px) {
-    // Adjustments for screens smaller than 300px
-    .datatable .datagrid {
-      min-width: 100px;
+  .singleproduct {
+    .singleproductContainer {
+      background-color: #171717;
+      .top {
+        background-color: #171717;
+      }
+      .right {
+        background-color: #171717;
+      }
     }
   }
 }
