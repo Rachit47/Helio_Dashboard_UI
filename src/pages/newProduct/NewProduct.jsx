@@ -4,8 +4,15 @@ import { useState } from "react";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
 import CloudUploadRoundedIcon from "@mui/icons-material/CloudUploadRounded";
+import { useNavigate } from "react-router-dom";
 const NewProduct = ({ inputs, title }) => {
   const [file, setFile] = useState("");
+
+  const navigate = useNavigate();
+  const GoBackHandler = () => {
+    navigate(-1);
+  };
+
   return (
     <div className="newProduct">
       <Sidebar />
@@ -13,6 +20,9 @@ const NewProduct = ({ inputs, title }) => {
         <Navbar />
         <div className="protop">
           <h1>{title}</h1>
+          <button onClick={GoBackHandler} className="GoBackButton">
+            Go Back
+          </button>
         </div>
         <div className="probottom">
           <div className="proleft">

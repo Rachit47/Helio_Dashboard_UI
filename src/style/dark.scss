@@ -44,14 +44,13 @@
   .datatable {
     background-color: #171717;
     .datagrid {
-      color: rgb(140, 138, 138);
       border: none;
       min-width: 600px; // Ensures the grid has a minimum width
 
       .MuiDataGrid-columnHeaders,
       .MuiDataGrid-columnHeaderTitleContainer,
       .MuiDataGrid-cell {
-        color: rgb(140, 138, 138);
+        color: rgb(104, 101, 101);
         border: none;
       }
 
@@ -74,7 +73,7 @@
   .prodatatable {
     background-color: #171717;
     .prodatagrid {
-      color: rgb(140, 138, 138);
+      color: rgb(104, 101, 101);
       border: none;
 
       .proviewButton {
@@ -82,6 +81,17 @@
       }
 
       .prodeleteButton {
+        color: rgb(192, 88, 88);
+      }
+    }
+  }
+
+  .orderdatatable {
+    background-color: #171717;
+    .orderdatagrid {
+      color: rgb(104, 101, 101);
+      border: none;
+      .orderdeleteButton {
         color: rgb(192, 88, 88);
       }
     }
@@ -136,13 +146,33 @@
     }
   }
   .list {
+    background-color: #171717;
     .listContainer {
       background-color: #171717;
     }
   }
   .prolist {
+    background-color: #171717;
     .prolistContainer {
       background-color: #171717;
     }
+  }
+  .orderlist {
+    background-color: #171717;
+    .orderlistContainer {
+      background-color: #171717;
+    }
+  }
+  .CustomerClass {
+    background-color: #171717;
+  }
+  .OrderClass {
+    background-color: #171717;
+  }
+  .ProductClass {
+    background-color: #171717;
+  }
+  .piechart {
+    background-color: #171717;
   }
 }

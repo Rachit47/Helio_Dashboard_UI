@@ -1,7 +1,7 @@
 import "./datatable.scss";
 import { DataGrid } from "@mui/x-data-grid";
 import { userColumns, userRows } from "../../datatablesource";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useState } from "react";
 
 const Datatable = () => {
@@ -10,7 +10,10 @@ const Datatable = () => {
   const handleDelete = (id) => {
     setData(data.filter((item) => item.id !== id));
   };
-
+  const navigate = useNavigate();
+  const GoBackHandler = () => {
+    navigate(-1);
+  };
   const actionColumn = [
     {
       field: "action",
@@ -43,6 +46,9 @@ const Datatable = () => {
         <Link to="/users/new" className="link">
           Add New
         </Link>
+        <button onClick={GoBackHandler} className="GoBackButton">
+          Go Back
+        </button>
       </div>
       <DataGrid
         className="datagrid"

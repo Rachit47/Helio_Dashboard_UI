@@ -3,8 +3,15 @@ import "./new.scss";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
 import CloudUploadRoundedIcon from "@mui/icons-material/CloudUploadRounded";
+import { useNavigate } from "react-router-dom";
 const New = ({ inputs, title }) => {
   const [file, setFile] = useState("");
+
+  const navigate = useNavigate();
+  const GoBackHandler = () => {
+    navigate(-1);
+  };
+
   return (
     <div className="new">
       <Sidebar />
@@ -12,6 +19,9 @@ const New = ({ inputs, title }) => {
         <Navbar />
         <div className="top">
           <h1>{title}</h1>
+          <button onClick={GoBackHandler} className="GoBackButton">
+            Go Back
+          </button>
         </div>
         <div className="bottom">
           <div className="left">

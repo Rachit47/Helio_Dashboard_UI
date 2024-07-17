@@ -7,6 +7,7 @@ import Navbar from "../../components/navbar/Navbar";
 // import List from "../../components/table/Table";
 import Chart from "../../components/chart/Chart";
 import { productSales } from "../../datatablesource";
+import { useNavigate } from "react-router-dom";
 const Singleproduct = () => {
   const { productId } = useParams(); // Extracting userId from the route params
 
@@ -17,17 +18,25 @@ const Singleproduct = () => {
   const productSalesdata = productSales.find(
     (sales) => sales.id === productIdNum
   );
-  console.log(productSales);
 
+  const navigate = useNavigate();
+  const GoBackHandler = () => {
+    navigate(-1);
+  };
+  
   if (!productData) {
     return <div>Product not found for ID: {productId}</div>;
   }
+
   return (
     <div className="singleproduct">
       <Sidebar />
       <div className="singleproductContainer">
         <Navbar />
         <div className="top">
+          <button onClick={GoBackHandler} className="GoBackButton">
+            Go Back
+          </button>
           <div className="left">
             {/* <div className="editButton">Edit</div> */}
             <h1 className="title">Product Information</h1>

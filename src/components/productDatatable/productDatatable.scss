@@ -15,10 +15,16 @@
   .prodatagrid .MuiDataGrid-cell {
     justify-content: space-evenly;
     text-align: center;
+    font-family: "Saira", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
   }
 
   .prodatagrid .MuiDataGrid-cellContent {
     text-align: center;
+    font-family: "Saira", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
   }
 
   .prodatatableTitle {
@@ -32,18 +38,29 @@
     display: flex;
     justify-content: space-between;
 
-    .prolink {
-      align-items: center;
+    .GoBackButton {
       font-family: "Saira", sans-serif;
       font-optical-sizing: auto;
       font-weight: 500;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: rgb(0, 124, 0);
+      color: rgb(235, 234, 234);
+      border: none;
+      cursor: pointer;
+    }
+    .prolink {
+      margin-left: 850px;
+      font-family: "Saira", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 800;
       text-decoration: none;
       color: green;
-      font-size: 16px;
-      font-weight: 400;
+      font-size: 18px;
       border: 1px solid green;
       padding: 5px;
-      border-radius: 5px;
+      border-radius: 8px;
+      border-width: 2px;
       cursor: pointer;
     }
   }

@@ -5,6 +5,7 @@ import { userRows } from "../../datatablesource";
 import Sidebar from "../../components/sidebar/Sidebar";
 import Navbar from "../../components/navbar/Navbar";
 import Chart from "../../components/chart/Chart";
+import { useNavigate } from "react-router-dom";
 // import List from "../../components/table/Table";
 import { userSpendingdata } from "../../datatablesource";
 const Single = () => {
@@ -14,6 +15,12 @@ const Single = () => {
 
   const userData = userRows.find((user) => user.id === userIdNum);
   const SpendingData = userSpendingdata.find((user) => user.id === userIdNum);
+
+  const navigate = useNavigate();
+  const GoBackHandler = () => {
+    navigate(-1);
+  };
+
   if (!userData) {
     return <div>User not found for ID: {userId}</div>;
   }
@@ -23,9 +30,13 @@ const Single = () => {
       <div className="singleContainer">
         <Navbar />
         <div className="top">
+          <button onClick={GoBackHandler} className="GoBackButton">
+            Go Back
+          </button>
           <div className="left">
             {/* <div className="editButton">Edit</div> */}
             <h1 className="title">Customer Information</h1>
+
             <div className="item">
               <img src={userData.img} alt="" className="itemImg" />
               <div className="details">
